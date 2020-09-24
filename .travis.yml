@@ -5,6 +5,7 @@ go:
   
 before_script:
   - sudo snap install hugo --channel=extended/stable
+  - /usr/bin/python -m pip install --upgrade pip
 
 script:
   - hugo
