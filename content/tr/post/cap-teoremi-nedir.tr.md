@@ -1,6 +1,6 @@
 ---
 title: "Cap Teoremi Nedir?"
-date: 2020-03-10T21:54:07+03:00
+date: 2017-04-05
 draft: false
 ---
 

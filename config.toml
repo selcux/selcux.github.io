@@ -11,6 +11,7 @@ pygmentskUseClasses = true
 DefaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 copyright = "Selçuk Öztürk"
+disqusShortname = "selcux-github"
 
 [languages]
   [languages.en]
