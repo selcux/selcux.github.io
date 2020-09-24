@@ -1,0 +1,89 @@
+baseURL = "https://selcux.github.io/"
+theme = "beautifulhugo"
+# themesDir = "themes"
+# theme = "monopriv"
+# theme = "hugo-theme-nix"
+
+pygmentsCodeFences = true
+pygmentskUseClasses = true
+
+
+DefaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+copyright = "Selçuk Öztürk"
+
+[languages]
+  [languages.en]
+    title = "Selçuk Öztürk"
+    weight = 1
+    contentDir = "content/en" # English
+    languageName = "English"
+    lang = "en"
+  [languages.tr]
+    title = "Selçuk Öztürk"
+    weight = 2
+    contentDir = "content/tr" # Turkish
+    languageName = "Türkçe"
+    lang = "tr"
+
+[Author]
+  name = "Selçuk Öztürk"
+  # website = "yourwebsite.com"
+  email = "selcukahmed@gmail.com"
+  # facebook = "username"
+  github = "selcux"
+  gitlab = "selcux"
+  # bitbucket = "selcux"
+  twitter = "selcux"
+  # reddit = "username"
+  linkedin = "selcukozturk"
+  # xing = "username"
+  # stackoverflow = "users/XXXXXXX/username"
+
+# [params]
+#   Name = "Selçuk Öztürk"
+#   HeaderUsername = "selcux"
+#   HeaderHostname = "github.io"
+#   About = "Software Labourer"
+#   # ProfilePicture = "profile_picture_url"
+#   # BitbucketID = "your_bitbucket_id"
+#   # CodepenID = "your_codepen"
+#   # CvURL = "your_cv_url"
+#   Email = "selcukahmed@gmail.com"
+#   # FacebookID = "your_facebook"
+#   GithubID = "selcux"
+#   GitlabId = "selcux"
+#   # GnuPGFingerprint = "your_gpg_fingerprint"
+#   # GoogleAnalytics = "your_google_analytics_id"
+#   # GoogleplusID = "your_googleplus"
+#   # InstagramID = "your_instagram"
+#   LinkedInID = "selcukozturk"
+#   # MastodonURL = "your_mastodon_profile"
+#   # Mobile = "+1-201-555-0123"
+#   # PayPalMeID = "https://www.paypal.me/..."
+#   # Phone = "+1-201-555-0123"
+#   # RedditID = "your_reddit"
+#   # SlackURL = "https://join.slack.com/..."
+#   # StackExchangeID = "your_stackexchange_id"
+#   # StackOverflowID = "your_stackoverflow_id"
+#   # TelegramID = "your_telegram"
+#   TwitterID = "selcux"
+#   # XingURL = "https://www.xing.com/profile/..."
+
+# [menu]
+#   [[menu.header]]
+#     identifier = "post"
+#     name = "posts"
+#     weight = 0
+#   [[menu.header]]
+#     parent = "post"
+#     name = "All Posts"
+#     url = "/post"
+#   [[menu.header]]
+#     parent = "post"
+#     name = "categories"
+#     url = "/categories"
+#   [[menu.header]]
+#     parent = "post"
+#     name = "tags"
+#     url = "/tags"
