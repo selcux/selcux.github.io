@@ -1,7 +1,7 @@
 ---
 title: "Fonksiyonel Programlamanın Önemi"
 date: 2017-04-05
-draft: true
+draft: false
 ---
 
 Benim gibi neolotik çağdan kalmaysanız ilk bilgisayarınızın kapasitesi muhtemelen MB ile temsil edilen depolama birimleri ve Mhz cinsinden işlem ünitelerinden meydana geliyordur. Örneğin benimki, 32 MB RAMli, 2 GB HDDli, Intel Pentium 200MMX işlemciliydi. Windows 95 işletim sistemi vardı. "Çok çekirdek" o dönem bakkaldan alınan bir şeydi. Bu şartlardaki gereksinimleriniz de haliyle elinizdeki donanımı sonuna kadar kullanabilecek, ona hükmedecek yazılım mimarileri kullanmak olacaktır. Lisp gibi matematiksel soyutlama üzerine geliştirilmiş fonksiyonel programlama paradigması da haliyle kimsenin ilgisini çekmiyordu. Donanıma daha yakın olan C gibi imperatif diller endüstri standardı olarak kabul görüyordu. Onlar da zamanla yerlerini nesne yönelimli (object oriented) dillere bıraktılar. Fakat donanımın, yazılım kavramlarının yavaş gelişimi karşısında ışık hızında gelişmeye devam etmesi (bkz. Moore yasası) oyunun kurallarını değiştirdi. Her ne kadar yazılım teknolojileri gelişmeye devam etse de, üzerine oturdukları temel kavramlar hiç değişmedi. Çok çekirdekli sistemler, bulut mimarileri, devasa veriler vs. artık yazılımcıları farklı bir perspektiften bakmaya zorluyor.
