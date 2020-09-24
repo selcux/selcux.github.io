@@ -6,7 +6,7 @@ draft: false
 
 Kendinizi hep acil işleri yetiştirmeye çalışırken ve yapmak istediklerinizi ertelerken bulduğunuz oldu mu? Ya da hep X olunca hayatınızın değişeceğini fakat o X in hiç gerçekleşmediğini?… Bu durumdan kurtulmanın tek bir yolu var. Oturup gereğini yapmak. Bunun nedenini anlamak için biraz daha derine, beynimizin nasıl çalıştığına inmemiz gerekiyor.
 
-![](/img/zaman-yonetimi.jpeg)
+!["Zaman Yönetimni"](/img/zaman-yonetimi.jpeg)
 
 ## Sorunun Kaynağı
 
@@ -27,7 +27,7 @@ Stephen Covey yapılacak işleri bir aciliyet-önem matrisine göre sıralamış
 3. Acil olmayan önemli işler
 4. Acil olmayan daha az önemli işler
 
-![](/img/covey-matris.gif "https://kahve6.blogspot.com/2010/07/zaman-yonetilebilir-mi.html")
+!["https://kahve6.blogspot.com/2010/07/zaman-yonetilebilir-mi.html"](/img/covey-matris.gif "https://kahve6.blogspot.com/2010/07/zaman-yonetilebilir-mi.html")
 
 Böyle bir tabloda işleri öncelik sırasında sıralamak daha kolay oluyor. Şimdiki asıl konu sürekli gelen kısa vadede çözülmesi gereken acil işlerin yanında orta ve uzun vadedeki işleri nasıl ertelemeden uygulamaya geçirebiliriz.
 
@@ -47,4 +47,4 @@ Benim kişisel görüşüm, zamanın %70'ini mevcut işlere harcamaktır. Geri k
 
 Dinamiklerine biraz değinecek olursak, modeli uyguladığımızda öncelikle zihnimizde biz farkında olmasak da birtakım değişimler gerçekleşecek. "Gelecek planlarımızı" uygulamaya taşıdığımız için artık beynimiz bunu ertelenmesi gereken gelecekteki bize yani o 3. tekil şahsa bırakmayacak. Bu bize üzerinde başlanmış işi devam ettirmek için bir sorumluluk bilinci kazandırmış olacak. İkincisi, artık kendinizi işi erteleme ataletinden kurtarmış olacaksınız. Kimileri için yeni bir başlangıç yapmak her zaman zordur. Modelin bu zorluğu aşmak için iyi bir yol olduğu kanısındayım. Ayrıca bu bizi konfor bölgesinin dışında tutarak sürekli olarak gelişim içinde olmamızı sağlayacak. Son olarak yeni fikirlere zaman ayırabilmemizi sağlayacak ki zaten bu bir girişimci için hayati bir öneme sahiptir bana göre.
 
-![](/img/comfort-zone-innovation.jpeg "https://novoed.com/creativity-music/reports/245843")
+!["https://novoed.com/creativity-music/reports/245843"](/img/comfort-zone-innovation.jpeg "https://novoed.com/creativity-music/reports/245843")

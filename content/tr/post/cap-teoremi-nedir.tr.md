@@ -6,7 +6,7 @@ draft: false
 
 CAP teoremi özellikle dağıtık (distributed) sistemlerle uğraşanların aşina olduğu bir terimdir. CAP teoremi, dağıtık bir sistemin aynı anda tutarlılık (consistency), ulaşılabilirlik (availability) ve bölünebilme toleransı (partition tolerance) koşullarına aynı anda sahip olamayacağını söyler. Yani bunlardan sadece ikisini tercih etmek durumundasınız. Teorem, ilk olarak 1998 yılında California üniversitesinde bilgisayar bilimcisi [Eric Brewer](https://en.wikipedia.org/wiki/Eric_Brewer_(scientist)) tarafından ortaya atılmıştır. Bu nedenler aynı zamanda Brewer teoremi olarak da bilinir.
 
-![](/img/cap-theorem.png "https://blog.nahurst.com/visual-guide-to-nosql-systems")
+!["https://blog.nahurst.com/visual-guide-to-nosql-systems"](/img/cap-theorem.png "https://blog.nahurst.com/visual-guide-to-nosql-systems")
 
 Aslında bu konu ile ilgili pekçok makale mevcut olsa da benim çok hoşuma giden yalın bir dille yazılmış [bu yazıyı](http://ksat.me/a-plain-english-introduction-to-cap-theorem) Türkçe olarak paylaşmak istedim.
 
