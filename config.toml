@@ -8,21 +8,22 @@ pygmentsCodeFences = true
 pygmentskUseClasses = true
 
 
-DefaultContentLanguage = "en"
+DefaultContentLanguage = "tr"
 defaultContentLanguageInSubdir = true
 copyright = "Selçuk Öztürk"
 disqusShortname = "selcux-github"
+googleAnalytics = "UA-179037129-1"
 
 [languages]
   [languages.en]
     title = "Selçuk Öztürk"
-    weight = 1
+    weight = 2
     contentDir = "content/en" # English
     languageName = "English"
     lang = "en"
   [languages.tr]
     title = "Selçuk Öztürk"
-    weight = 2
+    weight = 1
     contentDir = "content/tr" # Turkish
     languageName = "Türkçe"
     lang = "tr"
