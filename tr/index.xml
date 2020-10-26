@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Selçuk Öztürk</title>
+    <link>https://selcukozturk.io/tr/</link>
+    <description>Recent content on Selçuk Öztürk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>selcukahmed@gmail.com (Selçuk Öztürk)</managingEditor>
+    <webMaster>selcukahmed@gmail.com (Selçuk Öztürk)</webMaster>
+    <copyright>Selçuk Öztürk</copyright>
+    <lastBuildDate>Wed, 05 Apr 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://selcukozturk.io/tr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cap Teoremi Nedir?</title>
+      <link>https://selcukozturk.io/tr/post/cap-teoremi-nedir/</link>
+      <pubDate>Wed, 05 Apr 2017 00:00:00 +0000</pubDate>
+      <author>selcukahmed@gmail.com (Selçuk Öztürk)</author>
+      <guid>https://selcukozturk.io/tr/post/cap-teoremi-nedir/</guid>
+      <description>CAP teoremi özellikle dağıtık (distributed) sistemlerle uğraşanların aşina olduğu bir terimdir. CAP teoremi, dağıtık bir sistemin aynı anda tutarlılık (consistency), ulaşılabilirlik (availability) ve bölünebilme toleransı (partition tolerance) koşullarına aynı anda sahip olamayacağını söyler. Yani bunlardan sadece ikisini tercih etmek durumundasınız. Teorem, ilk olarak 1998 yılında California üniversitesinde bilgisayar bilimcisi Eric Brewer tarafından ortaya atılmıştır. Bu nedenler aynı zamanda Brewer teoremi olarak da bilinir.
+Aslında bu konu ile ilgili pekçok makale mevcut olsa da benim çok hoşuma giden yalın bir dille yazılmış bu yazıyı Türkçe olarak paylaşmak istedim.</description>
+    </item>
+    
+    <item>
+      <title>Fonksiyonel Programlamanın Önemi</title>
+      <link>https://selcukozturk.io/tr/post/fonksiyonel-programlamanin-onemi/</link>
+      <pubDate>Wed, 05 Apr 2017 00:00:00 +0000</pubDate>
+      <author>selcukahmed@gmail.com (Selçuk Öztürk)</author>
+      <guid>https://selcukozturk.io/tr/post/fonksiyonel-programlamanin-onemi/</guid>
+      <description>Benim gibi neolotik çağdan kalmaysanız ilk bilgisayarınızın kapasitesi muhtemelen MB ile temsil edilen depolama birimleri ve Mhz cinsinden işlem ünitelerinden meydana geliyordur. Örneğin benimki, 32 MB RAMli, 2 GB HDDli, Intel Pentium 200MMX işlemciliydi. Windows 95 işletim sistemi vardı. &amp;ldquo;Çok çekirdek&amp;rdquo; o dönem bakkaldan alınan bir şeydi. Bu şartlardaki gereksinimleriniz de haliyle elinizdeki donanımı sonuna kadar kullanabilecek, ona hükmedecek yazılım mimarileri kullanmak olacaktır. Lisp gibi matematiksel soyutlama üzerine geliştirilmiş fonksiyonel programlama paradigması da haliyle kimsenin ilgisini çekmiyordu.</description>
+    </item>
+    
+    <item>
+      <title>Zaman Yönetimi ve 70/20/10 Modeli</title>
+      <link>https://selcukozturk.io/tr/post/zaman-yonetimi/</link>
+      <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
+      <author>selcukahmed@gmail.com (Selçuk Öztürk)</author>
+      <guid>https://selcukozturk.io/tr/post/zaman-yonetimi/</guid>
+      <description>Kendinizi hep acil işleri yetiştirmeye çalışırken ve yapmak istediklerinizi ertelerken bulduğunuz oldu mu? Ya da hep X olunca hayatınızın değişeceğini fakat o X in hiç gerçekleşmediğini?… Bu durumdan kurtulmanın tek bir yolu var. Oturup gereğini yapmak. Bunun nedenini anlamak için biraz daha derine, beynimizin nasıl çalıştığına inmemiz gerekiyor.
+Sorunun Kaynağı Beynimiz daha doğrusu bilinç altımız gelecekteki bize 3. tekil şahıs muamelesi yapar. Özellikle pazarlama sektöründe çok kullanılan bir numaradır bu. Olmayan paradan harcatan kredi kartları; ileride öderim diye düşündüren borçlar ve krediler; “bunu şimdi alırım sonrasını o zaman düşünürüz”ler.</description>
+    </item>
+    
+  </channel>
+</rss>

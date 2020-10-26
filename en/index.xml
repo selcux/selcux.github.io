@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Selçuk Öztürk</title>
+    <link>https://selcukozturk.io/en/</link>
+    <description>Recent content on Selçuk Öztürk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>selcukahmed@gmail.com (Selçuk Öztürk)</managingEditor>
+    <webMaster>selcukahmed@gmail.com (Selçuk Öztürk)</webMaster>
+    <copyright>Selçuk Öztürk</copyright><atom:link href="https://selcukozturk.io/en/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

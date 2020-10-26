@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="tr" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Cap Teoremi Nedir? - Selçuk Öztürk</title>
+  <meta name="description" content="CAP teoremi özellikle dağıtık (distributed) sistemlerle uğraşanların aşina olduğu bir terimdir. CAP teoremi, dağıtık bir sistemin aynı anda tutarlılık (consistency), ulaşılabilirlik (availability) ve bölünebilme toleransı (partition tolerance) koşullarına aynı anda sahip olamayacağını söyler. Yani bunlardan sadece ikisini tercih etmek durumundasınız. Teorem, ilk olarak 1998 yılında California üniversitesinde bilgisayar bilimcisi Eric Brewer tarafından ortaya atılmıştır. Bu nedenler aynı zamanda Brewer teoremi olarak da bilinir.
+Aslında bu konu ile ilgili pekçok makale mevcut olsa da benim çok hoşuma giden yalın bir dille yazılmış bu yazıyı Türkçe olarak paylaşmak istedim.">
+  <meta name="author" content="Selçuk Öztürk"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Selçuk Öztürk",
+    
+    "url": "https:\/\/selcukozturk.io\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/selcukozturk.io\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/selcukozturk.io\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/selcukozturk.io\/tr\/post\/cap-teoremi-nedir\/",
+          "name": "Cap teoremi nedir?"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Selçuk Öztürk"
+  },
+  "headline": "Cap Teoremi Nedir?",
+  "description" : "CAP teoremi özellikle dağıtık (distributed) sistemlerle uğraşanların aşina olduğu bir terimdir. CAP teoremi, dağıtık bir sistemin aynı anda tutarlılık (consistency), ulaşılabilirlik (availability) ve bölünebilme toleransı (partition tolerance) koşullarına aynı anda sahip olamayacağını söyler. Yani bunlardan sadece ikisini tercih etmek durumundasınız. Teorem, ilk olarak 1998 yılında California üniversitesinde bilgisayar bilimcisi Eric Brewer tarafından ortaya atılmıştır. Bu nedenler aynı zamanda Brewer teoremi olarak da bilinir.\nAslında bu konu ile ilgili pekçok makale mevcut olsa da benim çok hoşuma giden yalın bir dille yazılmış bu yazıyı Türkçe olarak paylaşmak istedim.",
+  "inLanguage" : "tr",
+  "wordCount":  1113 ,
+  "datePublished" : "2017-04-05T00:00:00",
+  "dateModified" : "2017-04-05T00:00:00",
+  "image" : "https:\/\/selcukozturk.io\/",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https:\/\/selcukozturk.io\/tr\/post\/cap-teoremi-nedir\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/selcukozturk.io\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/selcukozturk.io\/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Cap Teoremi Nedir?" />
+<meta property="og:description" content="CAP teoremi özellikle dağıtık (distributed) sistemlerle uğraşanların aşina olduğu bir terimdir. CAP teoremi, dağıtık bir sistemin aynı anda tutarlılık (consistency), ulaşılabilirlik (availability) ve bölünebilme toleransı (partition tolerance) koşullarına aynı anda sahip olamayacağını söyler. Yani bunlardan sadece ikisini tercih etmek durumundasınız. Teorem, ilk olarak 1998 yılında California üniversitesinde bilgisayar bilimcisi Eric Brewer tarafından ortaya atılmıştır. Bu nedenler aynı zamanda Brewer teoremi olarak da bilinir.
+Aslında bu konu ile ilgili pekçok makale mevcut olsa da benim çok hoşuma giden yalın bir dille yazılmış bu yazıyı Türkçe olarak paylaşmak istedim.">
+<meta property="og:url" content="https://selcukozturk.io/tr/post/cap-teoremi-nedir/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Selçuk Öztürk" />
+
+  <meta name="twitter:title" content="Cap Teoremi Nedir?" />
+  <meta name="twitter:description" content="CAP teoremi özellikle dağıtık (distributed) sistemlerle uğraşanların aşina olduğu bir terimdir. CAP teoremi, dağıtık bir sistemin aynı anda tutarlılık (consistency), ulaşılabilirlik (availability) ve …">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@selcux" />
+  <meta name="twitter:creator" content="@selcux" />
+  <meta name="generator" content="Hugo 0.76.5" />
+  <link rel="alternate" href="https://selcukozturk.io/tr/index.xml" type="application/rss+xml" title="Selçuk Öztürk"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://selcukozturk.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="https://selcukozturk.io/css/syntax.css" /><link rel="stylesheet" href="https://selcukozturk.io/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-179037129-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://selcukozturk.io/tr/">Selçuk Öztürk</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+          
+            <li>
+              
+                
+              
+                
+                  <a href="/en" lang="en">English</a>
+                
+              
+            </li>
+          
+        
+
+        
+      </ul>
+    </div>
+
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>Cap Teoremi Nedir?</h1>
+              
+              
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;
+  
+  
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Selçuk Öztürk
+    
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>CAP teoremi özellikle dağıtık (distributed) sistemlerle uğraşanların aşina olduğu bir terimdir. CAP teoremi, dağıtık bir sistemin aynı anda tutarlılık (consistency), ulaşılabilirlik (availability) ve bölünebilme toleransı (partition tolerance) koşullarına aynı anda sahip olamayacağını söyler. Yani bunlardan sadece ikisini tercih etmek durumundasınız. Teorem, ilk olarak 1998 yılında California üniversitesinde bilgisayar bilimcisi <a href="https://en.wikipedia.org/wiki/Eric_Brewer_(scientist)">Eric Brewer</a> tarafından ortaya atılmıştır. Bu nedenler aynı zamanda Brewer teoremi olarak da bilinir.</p>
+<p><img src="/img/cap-theorem.png" alt="&ldquo;https://blog.nahurst.com/visual-guide-to-nosql-systems&rdquo;" title="https://blog.nahurst.com/visual-guide-to-nosql-systems"></p>
+<p>Aslında bu konu ile ilgili pekçok makale mevcut olsa da benim çok hoşuma giden yalın bir dille yazılmış <a href="http://ksat.me/a-plain-english-introduction-to-cap-theorem">bu yazıyı</a> Türkçe olarak paylaşmak istedim.</p>
+<h3 id="bölüm-1-remembrance-inc-yeni-girişiminiz">Bölüm 1. &ldquo;Remembrance Inc&rdquo;, yeni girişiminiz</h3>
+<p>Dün akşam eşiniz sizin onun doğum gününü hatırlamanız ve ona hediye almanızı takdirle karşılarken aklınızda garip bir fikir belirir. İnsanlar birşeyleri hatırlamakta oldukça başarısızlar. Ve siz de bu konuda çok iyisiniz. O halde neden bu yeteneğinize uygun bir girişim başlatmayasınız? Üzerinde düşündükçe bu fikir daha da çok hoşunuza gidiyor. Hatta fikrinizi anlatan gazete reklamları bile gözünüzün önünde canlanıyor.</p>
+<blockquote>
+<p><em>Remembrance Inc! — Asla unutmayın!</em><br>
+<em>Bu kadar unutkansınız diye hiç kötü hissettiniz mi? Endişelenmeyin! Çözüm bir telefon kadar yakın.</em><br>
+<em>Birşey hatırlamaya ihtiyacınız olduğunda bizi arayın ve hatırlamanız gerekenleri bildirin. Örn. bizi arayıp patronunuzun telefonunu söyleyin ve numarayı hatırlamayı unutun. Unuttuğunuzda bizi tekrar arayın ve biz size telefon numarasını bildireceğiz.</em><br>
+<em>Ücretlendirme istek başına 0,1 dolardır.</em></p>
+</blockquote>
+<p>Bu durumda sıradan bir telefon görüşmesi şöyle gerçekleşecektir:</p>
+<p><em>Müşteri: Merhaba, komşumun doğum gününü kaydeder misiniz?</em><br>
+<em>Siz: Tabi tarih nedir?</em><br>
+<em>Müşteri: 2 Ocak</em><br>
+<em>Siz: (Not defterinizdeki müşteri sayfasına tarihi not ediyorsunuz) Kaydedilmiştir. Bizi komşunuzun doğum gününü hatırlamak istediğiniz her an arayabilirsiniz.</em><br>
+<em>Müşteri: Teşekkür ederim</em><br>
+<em>Siz: Önemli değil. Kredi kartınızdan 0,1 dolar ücretlendirilmiştir.</em></p>
+<h3 id="bölüm-2-büyümeye-başlıyorsunuz">Bölüm 2. Büyümeye başlıyorsunuz</h3>
+<p>Girişimizi YCombinator tarafından fonlandı. Fikriniz çok basit. Tek gereken şey kağıt kalem ve çok etkili. Çılgınca yayılıyor ve günde yüzlerce çağrı almaya başlıyorsunuz.</p>
+<p>İşte sorun burada başlıyor. Bu yoğunlukta müşterileriniz kuyrukta size ulaşabilmek için her seferinde daha çok beklemek zorunda kalıyorlar. Ayrıca hasta olup işe gidemezseniz bütün günü kaybediyorsunuz. O gün size ulaşamayan memnuniyetsiz bir müşteri kitlesinden bahsetmiyoruz bile. Personeli genişletmek gerektiğine karar verip eşinizi de ofise çağırıyorsunuz.</p>
+<p>Plan basit:</p>
+<ol>
+<li>Eşiniz ve sizin için aynı hattı kullanan iki telefon var</li>
+<li>Müşteriler hala aynı numarayı arıyorlar</li>
+<li>Pbx hangi telefon boşsa ona yönlendiriyor çağrıyı</li>
+</ol>
+<h3 id="bölüm-3-ilk-kötü-hizmetiniz">Bölüm 3. İlk kötü hizmetiniz</h3>
+<p>Yeni sistemi geliştirdikten iki gün sonra sürekli müşteriniz olan John’dan bir telefon gelir:</p>
+<p><em>John: Merhaba</em><br>
+<em>Siz: &ldquo;Remembrance Inc!&ldquo;i aradığınız için teşekkürler. Nasıl yardımcı olabilirim?</em><br>
+<em>John: Yeni Delhi’ye uçağımın kaçta olduğunu söyler misiniz?</em><br>
+<em>Siz: Tabi. Bir saniye. (Not defterinize bakıyorsunuz) (John’un sayfasında öyle bir kayıt yok!)</em><br>
+<em>Siz: Efendim bir yanlışlık olmalı. Böyle bir uçuştan bizi haberdar etmemişsiniz.</em><br>
+<em>John: Ne?! Sizi daha dün aradım! (telefon kapanır)</em></p>
+<p>Peki bu nasıl oldu? John yalan söylüyor olabilir miydi? Biraz düşündükten sonra farkına varıyorsunuz. John dün arayıp eşinize ulaşmış olabilir mi? Eşinizin masasına gidip not defterini kontrol ediyorsunuz. İşte orada. Bunu eşinize söylüyorsunuz ve o da bir sorun olduğunu anlıyor.</p>
+<p>Ne berbat bir kusur! <strong>Dağıtık sisteminiz tutarlı değil. Müşterinin kaydının size ya da eşnize ulaşıp da bilgiye tekrar erişmek için yapılan aramada kaydın tutulmadığı kişiye denk gelme şansı her zaman var. Bu durumda müşteriye Remembrance Inc! tarafından tutarlı bir cevap verilemeyecek.</strong></p>
+<h3 id="bölüm-4-tutarlılık-sorununu-çözüyorsunuz">Bölüm 4. Tutarlılık sorununu çözüyorsunuz</h3>
+<p>Rakipleriniz kötü bir hizmeti göz ardı edebilir, fakat siz etmezsiniz. Eşiniz uyurken bütün gece düşünüp durursunuz ve sabaha güzel bir planla çıkarsınız. Eşinizi uyandırıp ona planı anlatırsınız:</p>
+<p><em>&ldquo;Hayatım bundan sonra olacak olan şudur:&quot;</em><br>
+<em>- Müşteri ikimizden birini (bilgiyi kaydetmek için) aradığında aranan kişi diğerine haber verecek.</em><br>
+<em>- Böylece ikimiz de aynı kaydı tutuyor olacağız.</em><br>
+<em>- Bilgilendirmek için çağrı geldiğinde (kayıtlı bilgiye ulaşmak için) birbirimizle konuşmamız gerekmeyecek. Zira ikimizde de kayıtların en güncel hali bulunacak.</em></p>
+<p>Ancak ufak bir sorun var; &ldquo;güncelleme&rdquo; isteği geldiğice bu ikinizin de meşgul olmasına ve aynı anda başka bir çağrı alamamanıza sebep olacak. Yani size yeni bir kayıt isteği geldiğinde bunu kaydederken eşiniz de kaydedecek ve yeni bir çağrı kabul edemeyecek. Bu durumun sizin için sakıncası yok çünkü gelen çoğu çağrı kaydedilmiş bilgileri alma amaçlı yapılıyor. (Müşteri bir kez kaydedip pekçok kez soruyor) Ayrıca hiçbir koşulda yanlış bilgi vermemelisiniz.</p>
+<p>Eşiniz bu durumu beğeniyor. Fakat tasarımda bir kusur daha olduğunu belirtiyor. &ldquo;Ya kimizden birisi o gün işe gelmezse? O gün hiçbir şekilde bilgi kaydedecek durumda olmayacağız. Çünkü diğer kişi yeni kayıtlardan haberdar olamayacak. <strong>Ulaşılabilirlik sorunumuz olacak. Mesela bana senin olmadığın bir gün yeni bir kayıt gelse ben onu kendi defterime yazsam bile kaydı hiçbir zaman tamamlayamayacağım zira senin kayıtların güncellenmemiş kalacak.</strong>&rdquo;</p>
+<h3 id="bölüm-5-şimdiye-kadarki-en-iyi-çözümü-buluyorsunuz">Bölüm 5. Şimdiye kadarki en iyi çözümü buluyorsunuz</h3>
+<p>Dağıtık sistemlerin neden sizin ilk düşündüğünüz kadar kolay olmadığını anlamaya başlıyorsunuz. Peki aynı zamanda <strong>&ldquo;hem tutarlı hem de ulaşılabilir&rdquo;</strong> bir sistem tasarlamak bu kadar zor mu? Başkaları için zor olabilir ama sizin için asla! Ertesi gün öyle bir çözümle geliyorsunuz ki rakipleriniz rüyasında bile göremez. Eşinizi gene erkenden uyandırıyorsunuz:</p>
+<p><em>&ldquo;Tutarlı ve ulaşılabilir olmak için yapacaklarımız şöyle: Öncelikle plan sana dün anlattığıma benzer.&quot;</em><br>
+<em>- Müşteri yeni bir kayıt girmek için aradığında eğer diğerimiz uygunsa ona haber veriyoruz ve kaydı tamamlıyoruz.</em><br>
+<em>- Fakat eğer diğerimiz o gün işte değilse ona email atıyoruz ve kaydı bildiriyoruz.</em><br>
+<em>- Ertesi gün işe gelince yapılacak ilk iş bütün emaillerdeki yeni bilgileri kaydedip güncellemek.</em></p>
+<p>Dahiyane bir fikir! Eşiniz sistemde herhangi bir açık bulamaz. Hadi uygulamaya geçirelim. Remembrance Inc! şimdi hem tutarlı hem ulaşılabilir!</p>
+<h3 id="bölüm-6-eşiniz-sinirleniyor">Bölüm 6. Eşiniz sinirleniyor</h3>
+<p>Bir süre herşey iyi gidiyor. Sistem tutarlı. İşe gelmediğiniz günlerde bile düzgün çalışıyor. Peki ikiniz de işe gelseniz bile biriniz diğerini güncellemediği durumda ne olur? Eşinizi her gün &ldquo;en iyi fikir saçmalıklarıyla&rdquo; sabahın köründe uyandırdığınız zamanları hatırladınız mı? Ya karınız aramaları kabul eder fakat bütün gün sizinle konuşmak istemeyecek kadar kızgın olursa? Fikriniz tamamen çöker. Sisteminiz tutarlılık ve uygunluk açısından çalışıyor olsa da bölünebilme toleransı bakımından zayıf kalıyor.</p>
+<p>Karınızla aranızı düzeltene kadar onu hiç aramayarak bölünme toleransını devreye sokabilirsiniz. Fakat bu durumda da sisteminiz &ldquo;müsait&rdquo; olmayacak.</p>
+<h3 id="bölüm-7-sonuç">Bölüm 7. Sonuç</h3>
+<p>imdi CAP Teoremi’ne tekrar göz atalım. Teorem, dağıtık bir sistem tasarlarsanız tutarlılık, ulaşılabilirlik ve bölünebilme toleransının üçüne de aynı anda sahip olamayacağınızı belirtiyor.</p>
+<p><strong>Tutarlılık:</strong> Kayıt ekleyen müşteriler, ne kadar çabuk geri ararlarsa arasınlar, her zaman her koşulda en güncel kayda ulaşacaklardır.<br>
+<strong>Uygunluk:</strong> Remembrance Inc! siz ve/veya eşiniz işte olduğu sürece her zaman çağrı kabul etmeye müsait olacaktır.<br>
+<strong>Bölünebilme/parçalanma toleransı:</strong> Remembrance Inc! sizin ve eşinizin arasında iletişim kopukluğu olsa bile çalışmaya devam edecektir.</p>
+<h3 id="bonus-etrafta-koşturan-bir-yazman-ile-eventual-consistency">Bonus: Etrafta koşturan bir yazman ile eventual consistency</h3>
+<p>İşte yeni bir yaklaşım. Eşinizin veya sizin kayıtlarınız güncellenince, ortlıkta dolaşarak diğer kayıtları güncelleyen bir yazman işe alabilirsiniz. Bunun en büyük faydası gelen kayıtları engellemeden arka planda çalışıyor olmasıdır. Bu pek çok NoSQL sisteminin çalışma şeklidir. Yerel kayıtlar değişince arka planda çalışan bir işlem tarafından diğerleri de güncellenir. Tek sorun arada sırada tutarlılığı kaybediyor olmanızdır. Örneğin müşteri önce eşinize kayıt yaptırıp sizin kayıtlarınız güncellenmeden evvel tekrar aradığında size ulaşırsa bilgileri bulunamaz. Fakat o kadar da kötü değil. Ne de olsa bu olasılık her zaman gerçekleşmiyor. En azından müşterinin 5 dakika içinde arayacak kadar unutkan olmadığını varsayabilirsiniz.</p>
+
+
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://selcukozturk.io/tr/post/fonksiyonel-programlamanin-onemi/" data-toggle="tooltip" data-placement="top" title="Fonksiyonel Programlamanın Önemi">&larr; </a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:selcukahmed@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/selcux" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/selcux" title="GitLab">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/selcux" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/selcukozturk" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              Selçuk Öztürk
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2017
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://selcukozturk.io/tr/">Selçuk Öztürk</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://selcukozturk.io/js/main.js"></script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://selcukozturk.io/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

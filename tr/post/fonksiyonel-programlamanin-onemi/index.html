@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="tr" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Fonksiyonel Programlamanın Önemi - Selçuk Öztürk</title>
+  <meta name="description" content="Benim gibi neolotik çağdan kalmaysanız ilk bilgisayarınızın kapasitesi muhtemelen MB ile temsil edilen depolama birimleri ve Mhz cinsinden işlem ünitelerinden meydana geliyordur. Örneğin benimki, 32 MB RAMli, 2 GB HDDli, Intel Pentium 200MMX işlemciliydi. Windows 95 işletim sistemi vardı. &ldquo;Çok çekirdek&rdquo; o dönem bakkaldan alınan bir şeydi. Bu şartlardaki gereksinimleriniz de haliyle elinizdeki donanımı sonuna kadar kullanabilecek, ona hükmedecek yazılım mimarileri kullanmak olacaktır. Lisp gibi matematiksel soyutlama üzerine geliştirilmiş fonksiyonel programlama paradigması da haliyle kimsenin ilgisini çekmiyordu.">
+  <meta name="author" content="Selçuk Öztürk"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Selçuk Öztürk",
+    
+    "url": "https:\/\/selcukozturk.io\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/selcukozturk.io\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/selcukozturk.io\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/selcukozturk.io\/tr\/post\/fonksiyonel-programlamanin-onemi\/",
+          "name": "Fonksiyonel programlamanın önemi"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Selçuk Öztürk"
+  },
+  "headline": "Fonksiyonel Programlamanın Önemi",
+  "description" : "Benim gibi neolotik çağdan kalmaysanız ilk bilgisayarınızın kapasitesi muhtemelen MB ile temsil edilen depolama birimleri ve Mhz cinsinden işlem ünitelerinden meydana geliyordur. Örneğin benimki, 32 MB RAMli, 2 GB HDDli, Intel Pentium 200MMX işlemciliydi. Windows 95 işletim sistemi vardı. \u0026ldquo;Çok çekirdek\u0026rdquo; o dönem bakkaldan alınan bir şeydi. Bu şartlardaki gereksinimleriniz de haliyle elinizdeki donanımı sonuna kadar kullanabilecek, ona hükmedecek yazılım mimarileri kullanmak olacaktır. Lisp gibi matematiksel soyutlama üzerine geliştirilmiş fonksiyonel programlama paradigması da haliyle kimsenin ilgisini çekmiyordu.",
+  "inLanguage" : "tr",
+  "wordCount":  746 ,
+  "datePublished" : "2017-04-05T00:00:00",
+  "dateModified" : "2017-04-05T00:00:00",
+  "image" : "https:\/\/selcukozturk.io\/",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https:\/\/selcukozturk.io\/tr\/post\/fonksiyonel-programlamanin-onemi\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/selcukozturk.io\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/selcukozturk.io\/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Fonksiyonel Programlamanın Önemi" />
+<meta property="og:description" content="Benim gibi neolotik çağdan kalmaysanız ilk bilgisayarınızın kapasitesi muhtemelen MB ile temsil edilen depolama birimleri ve Mhz cinsinden işlem ünitelerinden meydana geliyordur. Örneğin benimki, 32 MB RAMli, 2 GB HDDli, Intel Pentium 200MMX işlemciliydi. Windows 95 işletim sistemi vardı. &ldquo;Çok çekirdek&rdquo; o dönem bakkaldan alınan bir şeydi. Bu şartlardaki gereksinimleriniz de haliyle elinizdeki donanımı sonuna kadar kullanabilecek, ona hükmedecek yazılım mimarileri kullanmak olacaktır. Lisp gibi matematiksel soyutlama üzerine geliştirilmiş fonksiyonel programlama paradigması da haliyle kimsenin ilgisini çekmiyordu.">
+<meta property="og:url" content="https://selcukozturk.io/tr/post/fonksiyonel-programlamanin-onemi/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Selçuk Öztürk" />
+
+  <meta name="twitter:title" content="Fonksiyonel Programlamanın Önemi" />
+  <meta name="twitter:description" content="Benim gibi neolotik çağdan kalmaysanız ilk bilgisayarınızın kapasitesi muhtemelen MB ile temsil edilen depolama birimleri ve Mhz cinsinden işlem ünitelerinden meydana geliyordur. Örneğin benimki, 32 …">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@selcux" />
+  <meta name="twitter:creator" content="@selcux" />
+  <meta name="generator" content="Hugo 0.76.5" />
+  <link rel="alternate" href="https://selcukozturk.io/tr/index.xml" type="application/rss+xml" title="Selçuk Öztürk"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://selcukozturk.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="https://selcukozturk.io/css/syntax.css" /><link rel="stylesheet" href="https://selcukozturk.io/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-179037129-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://selcukozturk.io/tr/">Selçuk Öztürk</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+          
+            <li>
+              
+                
+              
+                
+                  <a href="/en" lang="en">English</a>
+                
+              
+            </li>
+          
+        
+
+        
+      </ul>
+    </div>
+
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>Fonksiyonel Programlamanın Önemi</h1>
+              
+              
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;
+  
+  
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Selçuk Öztürk
+    
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>Benim gibi neolotik çağdan kalmaysanız ilk bilgisayarınızın kapasitesi muhtemelen MB ile temsil edilen depolama birimleri ve Mhz cinsinden işlem ünitelerinden meydana geliyordur. Örneğin benimki, 32 MB RAMli, 2 GB HDDli, Intel Pentium 200MMX işlemciliydi. Windows 95 işletim sistemi vardı. &ldquo;Çok çekirdek&rdquo; o dönem bakkaldan alınan bir şeydi. Bu şartlardaki gereksinimleriniz de haliyle elinizdeki donanımı sonuna kadar kullanabilecek, ona hükmedecek yazılım mimarileri kullanmak olacaktır. Lisp gibi matematiksel soyutlama üzerine geliştirilmiş fonksiyonel programlama paradigması da haliyle kimsenin ilgisini çekmiyordu. Donanıma daha yakın olan C gibi imperatif diller endüstri standardı olarak kabul görüyordu. Onlar da zamanla yerlerini nesne yönelimli (object oriented) dillere bıraktılar. Fakat donanımın, yazılım kavramlarının yavaş gelişimi karşısında ışık hızında gelişmeye devam etmesi (bkz. Moore yasası) oyunun kurallarını değiştirdi. Her ne kadar yazılım teknolojileri gelişmeye devam etse de, üzerine oturdukları temel kavramlar hiç değişmedi. Çok çekirdekli sistemler, bulut mimarileri, devasa veriler vs. artık yazılımcıları farklı bir perspektiften bakmaya zorluyor.</p>
+<p><img src="/img/erlang-quicksort.png" alt="Erlang quicksort örneği" title="Erlang quicksort örneği"></p>
+<p>Günümüzde kullanılan modern bilgisayarların en az 4 çekirdeği var. İşletim sistemi iş yükünü çekirdeklere eşit şekilde dağıtmaya çalışıyor. Fakat uygulamalardan hepsi birden fazla çekirdekte çalışacak şekilde geliştirilmemiş. Bu yüzden yeterli performansı sağlayamıyorlar. Daha iki çekirdeği doğru dürüst kullanamazken gelecek nesil sistemlerle nasıl başa çıkabiliriz ki?</p>
+<p>Bir uygulamanın birden fazla çekirdeği kullanabilmesi için, threadler yardımıyla işlemleri bölerek birden fazla çekirdeğe dağıtmak gerekiyor. Çoğu zaman veri kaybını önlemek için threadlerin senkronize edilmesi zorunlu hale gelir. Bu senkronizasyonlar karmaşık yazılım mimarileri oluşturulmasına neden olur. Tabi ki karmaşıklık oranı artınca hata oranı da artar. Daha da kötüsü çoklu threadler hata ayıklamayı da bir hayli zorlaştırabilir.</p>
+<p>Java, C++, C#, Python, PHP, JavaScript gibi kullandığımız imperatif diller thread senkronizasyonu haricinde başka sorunlara da sebebiyet verirler. Bunlardan en barizi, hatta fonksiyonel açıdan bakacak olursak bütün kötülüklerin anası diyebileceğimiz, mutability yani değiştirilebilir veri yapısıdır. İmperatif diller hafızada yer alan değerlerin değişmesi üzerine kuruludur. Uygulamanın doğrudan hafızaya erişip değişiklik yapabilme hakkı, uygulamanın sahip olduğu durumun değişmesine sebep olmaktadır. Hatalı bir sonlanma sonucunda bu değerlere bağlı olan threadler de sorun yaşayabilecektir.</p>
+<p><img src="/img/rust-quicksort.png" alt="Rust quicksort örneği" title="Rust quicksort örneği"></p>
+<p>Başka bir sorun ise yan etkilerdir. Fonksiyonel dillerde, özellikle de saf fonksiyonel dillerde bu yapıların değiştirilemez olması nedeniyle size o fonksiyonun istenilen işlemi yapmak dışında bir ek iş yapmayacağını garanti eder. Örneğin globalde bir g değişkeinmiz olduğunu düşünelim. Verilen iki sayıyı toplayan bir fonksiyonumuz olsun. İmperatif dillerde bu iki sayının toplamının sonucu bize verilirken, diğer yandan g değişkeninin içeriğini değiştirmek mümkündür. Buna yan etki deniyor. Fonksiyonel diller, matematiksel modelin üzerine oturduğu için değer alıp değer döndürmek dışında bir işlem yapmaktan sizi alıkoymaktadır. Dolayısıyla yan etki olmaz. Uygulamanın karmaşıklığı azalır ve daha az hata yapmaya yönlendirilirsiniz.</p>
+<p>Hafıza paylaşımını da unutmamak gerek. Ee şey.. Bu da aslında temelde bir mutability yani değiştirilebilir veri yapısı ile alakalıdır. Belli bir hafıza bölgesine tahsis edilen değişken içindeki değerde yani o bölgede yapılan değişiklik aynı anda birden fazla threadin buraya erişmeye çalışmasıyla sorun haline gelebilir. Bunu önlemek için locklar, mutexler, dining philosopherlar ve bilimum çözümle takla attırmanız gerekecek. Hangi thread ne şekilde çalışacak? Kime ne verilecek? Kaynaklar nasıl paylaştırılacak? Gibi sorulara çözüm ararken işlerin daha karmaşık hale gelmesi kaçınılmaz oluyor. Haliyle daha fazla bug.</p>
+<p>Şimdi bundan 10–20 yıl sonrasını hayal edelim. Muhtemelen elimizde binlerce çekirdek, ihtiyaca göre istenildiği kadar yatay büyüme gerçekleştirebilecek ve birçok farklı cihazın haberleşeceği mimariler olacaktır. İmperatif paradigma ile bütün bunları nasıl verimli kullanabiliriz? Thread senkronizasyonunu tek tek ele alırsak bunu başaramayız. Yazılımcı olarak geleceği nasıl şekillendireceğimiz buna vereceğimiz cevaptadır.</p>
+<p>Bu sorunun cevabı fonksiyonel paradigmadır. Paradigma diyorum çünkü fonksiyonel programlamaya geçiş yapmanız için öncelikle problemlere çözüm üretmedeki bakış açınızı değiştirmeniz gerekiyor. Ardışık komutlar içeren imperatif paradigmadan kurtulup, çözümü bütüncül, soyut ve matematiksel bir model olarak ele alan fonksiyonel paradigmaya geçmeniz gerekiyor. Tabi ki bu bir anda olabilecek bir şey değil. Bu bir süreç ve zaman alacaktır.</p>
+<p>Fonksiyonel dillerin bazı özellikleri şöyledir:</p>
+<ol>
+<li>Fonksiyonlar parametre değerleri aynı olduğu sürece hep aynı sonucu döndürürler.</li>
+<li>Parametreler pass bu value yöntemi ile verilir. Bu parametreler fonksiyon tarafından değiştirilemezler ve her yeni değer için yeni bir değişken oluştururlar.</li>
+<li>Fonksiyonlar kendi bünyeleri dışında hiç bir veri ya da durum üzerinde değişiklik yapamazlar. Bu yüzden fonksiyonların yan etkileri yoktur.</li>
+<li>Saf fonksiyonel dillerde bir değişkene bir değer atandığı zaman bu değer program son bulana kadar değişmez. Bu metot bünyesinde tanımlanan parametre değişkenleri için de geçerlidir.</li>
+<li>Bu immutable (değiştirilemez değer) yapısı nedeniyle fonksiyonel diller doğası gereği döngülere (for, while vs) sahip değillerdir. Bir döngüsel tekrarı gerçekleştirmek için özyineleme (recursion) kullanılır.</li>
+<li>Doğaları gereği fonksiyonel diller eşzamanlılık (concurrency) sorunlarını daha kolay çözerler.</li>
+</ol>
+<p>Fonksiyonel dillere özellikle değinmedim. Zira dilin kendisinden çok kavramın bize sunduğu çözüm daha önemlidir. Eğer geleceğe yatırım yapmak istiyorsanız mutlaka göz atmanız gereken önemli teknolojiler arasında yer alacak bir konudur.</p>
+
+
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://selcukozturk.io/tr/post/zaman-yonetimi/" data-toggle="tooltip" data-placement="top" title="Zaman Yönetimi ve 70/20/10 Modeli">&larr; </a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://selcukozturk.io/tr/post/cap-teoremi-nedir/" data-toggle="tooltip" data-placement="top" title="Cap Teoremi Nedir?"> &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:selcukahmed@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/selcux" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/selcux" title="GitLab">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/selcux" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/selcukozturk" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              Selçuk Öztürk
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2017
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://selcukozturk.io/tr/">Selçuk Öztürk</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://selcukozturk.io/js/main.js"></script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://selcukozturk.io/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+
