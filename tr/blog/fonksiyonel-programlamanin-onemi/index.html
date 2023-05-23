@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+      
+    
+
+      <title>Selçuk Öztürk</title>
+
+      
+
+      
+          <link rel="stylesheet" href="https://selcukozturk.io/site.css">
+      
+
+      
+      
+    </head>
+
+    <body class="hack dark main container">
+        
+    
+        
+                
+            
+    
+
+<article itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+        <h1 itemprop="headline">Fonksiyonel Programlamanın Önemi</h1>
+        <span class="muted">
+    <svg class="icon i-clock" viewBox="0 0 32 32"
+         width="16" height="16" fill="none" stroke="currentcolor"
+         stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+        <circle cx="16" cy="16" r="14"/>
+        <path d="M16 8 L16 16 20 20"/>
+    </svg>
+    <span>4 minute read</span>
+    <svg class="icon i-edit" viewBox="0 0 32 32"
+         width="16" height="16" fill="none" stroke="currentcolor"
+         stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+        <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z"/>
+    </svg>
+
+    Published: 2017-04-05
+</span>
+    </header>
+    <div itemprop="articleBody">
+      <p>Benim gibi neolotik çağdan kalmaysanız ilk bilgisayarınızın kapasitesi muhtemelen MB ile temsil edilen depolama birimleri ve Mhz cinsinden işlem ünitelerinden meydana geliyordur. Örneğin benimki, 32 MB RAMli, 2 GB HDDli, Intel Pentium 200MMX işlemciliydi. Windows 95 işletim sistemi vardı. &quot;Çok çekirdek&quot; o dönem bakkaldan alınan bir şeydi. Bu şartlardaki gereksinimleriniz de haliyle elinizdeki donanımı sonuna kadar kullanabilecek, ona hükmedecek yazılım mimarileri kullanmak olacaktır. <span id="continue-reading"></span>Lisp gibi matematiksel soyutlama üzerine geliştirilmiş fonksiyonel programlama paradigması da haliyle kimsenin ilgisini çekmiyordu. Donanıma daha yakın olan C gibi imperatif diller endüstri standardı olarak kabul görüyordu. Onlar da zamanla yerlerini nesne yönelimli (object oriented) dillere bıraktılar. Fakat donanımın, yazılım kavramlarının yavaş gelişimi karşısında ışık hızında gelişmeye devam etmesi (bkz. Moore yasası) oyunun kurallarını değiştirdi. Her ne kadar yazılım teknolojileri gelişmeye devam etse de, üzerine oturdukları temel kavramlar hiç değişmedi. Çok çekirdekli sistemler, bulut mimarileri, devasa veriler vs. artık yazılımcıları farklı bir perspektiften bakmaya zorluyor.</p>
+<p><img src="/img/erlang-quicksort.png" alt="Erlang quicksort örneği" title="Erlang quicksort örneği" /></p>
+<p>Günümüzde kullanılan modern bilgisayarların en az 4 çekirdeği var. İşletim sistemi iş yükünü çekirdeklere eşit şekilde dağıtmaya çalışıyor. Fakat uygulamalardan hepsi birden fazla çekirdekte çalışacak şekilde geliştirilmemiş. Bu yüzden yeterli performansı sağlayamıyorlar. Daha iki çekirdeği doğru dürüst kullanamazken gelecek nesil sistemlerle nasıl başa çıkabiliriz ki?</p>
+<p>Bir uygulamanın birden fazla çekirdeği kullanabilmesi için, threadler yardımıyla işlemleri bölerek birden fazla çekirdeğe dağıtmak gerekiyor. Çoğu zaman veri kaybını önlemek için threadlerin senkronize edilmesi zorunlu hale gelir. Bu senkronizasyonlar karmaşık yazılım mimarileri oluşturulmasına neden olur. Tabi ki karmaşıklık oranı artınca hata oranı da artar. Daha da kötüsü çoklu threadler hata ayıklamayı da bir hayli zorlaştırabilir.</p>
+<p>Java, C++, C#, Python, PHP, JavaScript gibi kullandığımız imperatif diller thread senkronizasyonu haricinde başka sorunlara da sebebiyet verirler. Bunlardan en barizi, hatta fonksiyonel açıdan bakacak olursak bütün kötülüklerin anası diyebileceğimiz, mutability yani değiştirilebilir veri yapısıdır. İmperatif diller hafızada yer alan değerlerin değişmesi üzerine kuruludur. Uygulamanın doğrudan hafızaya erişip değişiklik yapabilme hakkı, uygulamanın sahip olduğu durumun değişmesine sebep olmaktadır. Hatalı bir sonlanma sonucunda bu değerlere bağlı olan threadler de sorun yaşayabilecektir.</p>
+<p><img src="/img/rust-quicksort.png" alt="Rust quicksort örneği" title="Rust quicksort örneği" /></p>
+<p>Başka bir sorun ise yan etkilerdir. Fonksiyonel dillerde, özellikle de saf fonksiyonel dillerde bu yapıların değiştirilemez olması nedeniyle size o fonksiyonun istenilen işlemi yapmak dışında bir ek iş yapmayacağını garanti eder. Örneğin globalde bir g değişkeinmiz olduğunu düşünelim. Verilen iki sayıyı toplayan bir fonksiyonumuz olsun. İmperatif dillerde bu iki sayının toplamının sonucu bize verilirken, diğer yandan g değişkeninin içeriğini değiştirmek mümkündür. Buna yan etki deniyor. Fonksiyonel diller, matematiksel modelin üzerine oturduğu için değer alıp değer döndürmek dışında bir işlem yapmaktan sizi alıkoymaktadır. Dolayısıyla yan etki olmaz. Uygulamanın karmaşıklığı azalır ve daha az hata yapmaya yönlendirilirsiniz.</p>
+<p>Hafıza paylaşımını da unutmamak gerek. Ee şey.. Bu da aslında temelde bir mutability yani değiştirilebilir veri yapısı ile alakalıdır. Belli bir hafıza bölgesine tahsis edilen değişken içindeki değerde yani o bölgede yapılan değişiklik aynı anda birden fazla threadin buraya erişmeye çalışmasıyla sorun haline gelebilir. Bunu önlemek için locklar, mutexler, dining philosopherlar ve bilimum çözümle takla attırmanız gerekecek. Hangi thread ne şekilde çalışacak? Kime ne verilecek? Kaynaklar nasıl paylaştırılacak? Gibi sorulara çözüm ararken işlerin daha karmaşık hale gelmesi kaçınılmaz oluyor. Haliyle daha fazla bug.</p>
+<p>Şimdi bundan 10–20 yıl sonrasını hayal edelim. Muhtemelen elimizde binlerce çekirdek, ihtiyaca göre istenildiği kadar yatay büyüme gerçekleştirebilecek ve birçok farklı cihazın haberleşeceği mimariler olacaktır. İmperatif paradigma ile bütün bunları nasıl verimli kullanabiliriz? Thread senkronizasyonunu tek tek ele alırsak bunu başaramayız. Yazılımcı olarak geleceği nasıl şekillendireceğimiz buna vereceğimiz cevaptadır.</p>
+<p>Bu sorunun cevabı fonksiyonel paradigmadır. Paradigma diyorum çünkü fonksiyonel programlamaya geçiş yapmanız için öncelikle problemlere çözüm üretmedeki bakış açınızı değiştirmeniz gerekiyor. Ardışık komutlar içeren imperatif paradigmadan kurtulup, çözümü bütüncül, soyut ve matematiksel bir model olarak ele alan fonksiyonel paradigmaya geçmeniz gerekiyor. Tabi ki bu bir anda olabilecek bir şey değil. Bu bir süreç ve zaman alacaktır.</p>
+<p>Fonksiyonel dillerin bazı özellikleri şöyledir:</p>
+<ol>
+<li>Fonksiyonlar parametre değerleri aynı olduğu sürece hep aynı sonucu döndürürler.</li>
+<li>Parametreler pass bu value yöntemi ile verilir. Bu parametreler fonksiyon tarafından değiştirilemezler ve her yeni değer için yeni bir değişken oluştururlar.</li>
+<li>Fonksiyonlar kendi bünyeleri dışında hiç bir veri ya da durum üzerinde değişiklik yapamazlar. Bu yüzden fonksiyonların yan etkileri yoktur.</li>
+<li>Saf fonksiyonel dillerde bir değişkene bir değer atandığı zaman bu değer program son bulana kadar değişmez. Bu metot bünyesinde tanımlanan parametre değişkenleri için de geçerlidir.</li>
+<li>Bu immutable (değiştirilemez değer) yapısı nedeniyle fonksiyonel diller doğası gereği döngülere (for, while vs) sahip değillerdir. Bir döngüsel tekrarı gerçekleştirmek için özyineleme (recursion) kullanılır.</li>
+<li>Doğaları gereği fonksiyonel diller eşzamanlılık (concurrency) sorunlarını daha kolay çözerler.</li>
+</ol>
+<p>Fonksiyonel dillere özellikle değinmedim. Zira dilin kendisinden çok kavramın bize sunduğu çözüm daha önemlidir. Eğer geleceğe yatırım yapmak istiyorsanız mutlaka göz atmanız gereken önemli teknolojiler arasında yer alacak bir konudur.</p>
+
+    </div>
+
+    
+        <footer>
+            <hr>
+            <p>
+                
+                    Published by Selçuk Öztürk
+                
+                
+                
+            </p>
+            
+            
+        </footer>
+    
+</article>
+
+
+    </body>
+
+</html>
